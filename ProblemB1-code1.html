@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<title>ProblemB1-1</title>
+<!script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&skin=sunburst"><!/script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="./prettify.css">
+<!link rel="stylesheet" type="text/css" href="./float.css">
+</head>
+<body>
+
+<pre class="prettyprint linenums lang-java">
+public class ModePlace extends FigModifyingModeImpl {
+
+    public void mousePressed(MouseEvent me) {
+        GraphNodeRenderer renderer;
+        _pers = renderer.<a href="#getFigNodeFor" name="rgetFigNodeFor">getFigNodeFor(gm, lay, _node, null)</a>;
+    }
+}
+</pre>
+    
+<pre class="prettyprint linenums lang-java">
+public abstract class UmlDiagramRenderer
+    implements GraphNodeRenderer, GraphEdgeRenderer {
+}
+
+public class ClassDiagramRenderer extends UmlDiagramRenderer {
+
+    public FigNode <a name="getFigNodeFor">getFigNodeFor(GraphModel gm, Layer lay,
+				 Object node, Map styleAttributes)</a> {
+        FigNodeModelElement figNode;
+        figNode = (FigNodeModelElement) ((UMLDiagram) diag)
+                .drop(node, null);
+        lay.<a href="#add" name="radd">add(figNode)</a>;
+    } <a href="#rgetFigNodeFor">//呼び出し元に戻る</a>
+}
+</pre>
+
+<pre class="prettyprint linenums lang-java">
+public class LayerPerspective extends LayerDiagram implements GraphListener {
+
+}
+
+public class LayerPerspectiveMutable extends LayerPerspective {
+
+    public void <a name="add">add(Fig fig)</a> {
+        <a href="#add2" name="radd2">super.add(fig)</a>;
+    } <a href="#radd">//呼び出し元に戻る</a>
+}
+</pre>
+    
+<pre class="prettyprint linenums lang-java">
+public class LayerDiagram extends Layer {
+    private List&lt;Fig&gt; contents;
+
+    public void <a name="add2">add(Fig f)</a> {
+        contents.add(f);
+    } <a href="#radd2">//呼び出し元に戻る</a>
+}
+</pre>
+    
+
+<!/div>
+<p style="margin-bottom:3em;"></p>
+<a href="ProblemB1-code2.html">選択機能へはこちら</a>
+<p style="margin-bottom:50em;"></p>
+<!/div>
+</body>
+
+</body>
