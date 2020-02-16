@@ -1,0 +1,7 @@
+.prettyprint ol.linenums > li {
+  list-style-type: decimal; 
+}
+
+pre.prettyprint {
+  font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+}
