@@ -30,18 +30,18 @@ public class Editor implements Serializable, MouseListener,
 
     public LayerManager <a name="getLayerManager">getLayerManager()</a> {
         return _layerManager;
-    } <a href="#rgetLayerManager">//ŒÄ‚Ño‚µŒ³‚É–ß‚é</a>
+    } <a href="#rgetLayerManager">//å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹</a>
 
     protected static Rectangle _hitRect;
 
     public final Fig <a name="hit">hit(Point p)</a> {
         return <a href="#hit2" name="rhit2">hit(_hitRect)</a>;
-    } <a href="#rhit">//ŒÄ‚Ño‚µŒ³‚É–ß‚é</a>
+    } <a href="#rhit">//å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹</a>
 
     public Fig <a name="hit2">hit(Rectangle r)</a> {
         Fig f = <a href="#getLayerManager" name="rgetLayerManager">getLayerManager()</a>.<a href="#hit3" name="rhit3">hit(r)</a>;
         return f;
-    } <a href="#rhit2">//ŒÄ‚Ño‚µŒ³‚É–ß‚é</a>
+    } <a href="#rhit2">//å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹</a>
 }
 </pre>
 
@@ -51,7 +51,7 @@ public class LayerManager implements java.io.Serializable {
 
     public Fig <a name="hit3">hit(Rectangle r)</a> {
         return _activeLayer.<a href="#hit4" name="rhit4">hit(r)</a>;
-    } <a href="#rhit3">//ŒÄ‚Ño‚µŒ³‚É–ß‚é</a>
+    } <a href="#rhit3">//å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹</a>
 }
 </pre>
 
@@ -63,17 +63,17 @@ public class LayerDiagram extends Layer {
         int i;
         Fig f = (Fig) contents.get(i);
         return f;
-    } <a href="#rhit4">//ŒÄ‚Ño‚µŒ³‚É–ß‚é</a>
+    } <a href="#rhit4">//å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹</a>
 }
 </pre>
     
 <p style="margin-bottom:3em;"></p>
-<a href="ProblemA1-code1.html">”z’u‹@”\‚Ö‚Í‚±‚¿‚ç</a>
+<a href="ProblemA1-code1.html">é…ç½®æ©Ÿèƒ½ã¸ã¯ã“ã¡ã‚‰</a>
 <p style="margin-bottom:3em;"></p>
-<a href="http://URL.jp", target="_blank">‰ñ“š‚Í‚±‚¿‚ç</a>
+<a href="http://URL.jp", target="_blank">å›ç­”ã¯ã“ã¡ã‚‰</a>
 <p style="margin-bottom:3em;"></p>
-Ÿ‚Éi‚Ş‘O‚ÉGoogle Foam‰ñ“šƒy[ƒW‚Ìƒ^ƒu‚ğ•Â‚¶‚Ä‚­‚¾‚³‚¢D
-<a href="http://URL.jp">Ÿ‚Ö</a>
+æ¬¡ã«é€²ã‚€å‰ã«Google Foamå›ç­”ãƒšãƒ¼ã‚¸ã®ã‚¿ãƒ–ã‚’é–‰ã˜ã¦ãã ã•ã„ï¼
+<a href="http://URL.jp">æ¬¡ã¸</a>
 <p style="margin-bottom:30em;"></p>
 <!/div>
 </body>
